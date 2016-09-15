@@ -5,6 +5,19 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveTileService", "LiveTileService\LiveTileService.csproj", "{0420436C-7CE9-4F0F-94BA-5BD4EB1F5F6C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{A2EF9B77-B142-472E-A4DD-F04F58096A1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{2FD99607-74E7-4CAF-BA11-FC991608D418}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{A6DB0DCF-BE2B-4B3D-A32B-6FC6069433B4}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\LiveTileService.json = PublishScripts\Templates\LiveTileService.json
+		PublishScripts\Templates\LiveTileService.param.dev.json = PublishScripts\Templates\LiveTileService.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FD99607-74E7-4CAF-BA11-FC991608D418} = {A2EF9B77-B142-472E-A4DD-F04F58096A1B}
+		{A6DB0DCF-BE2B-4B3D-A32B-6FC6069433B4} = {A2EF9B77-B142-472E-A4DD-F04F58096A1B}
 	EndGlobalSection
 EndGlobal
